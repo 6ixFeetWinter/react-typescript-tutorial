@@ -36,6 +36,7 @@ function App() {
       <div>
         <ul>
           {/* <Items memos={memos} /> */}
+          <p>メモ一覧</p>
         {memos.map( (memo:string, index:number) => (
           <li key={memo + index}>
             <p>{memo}</p>
