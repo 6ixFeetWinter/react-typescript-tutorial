@@ -1,7 +1,16 @@
-import React from 'react'
+import React, { FC } from 'react'
 
-export const Items = () => {
+type ItemsProps = {
+  memos: string[];
+}
+
+export const Items: FC<ItemsProps> = (memos) => {
+  console.log(memos)
   return (
-    <div>Items</div>
+    <div>
+      {memos.map(( memo:string, index:number ) => {
+        <li key = {index}>{memo}</li>
+      })}
+    </div>
   )
 }

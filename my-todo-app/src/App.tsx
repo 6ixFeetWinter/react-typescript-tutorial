@@ -29,6 +29,7 @@ function App() {
       <button onClick={onAddMemo}>追加</button>
       <div>
         <ul>
+          <Items memos={memos} />
           {/* propsでmemosを渡そうとしたらなんかエラーになった
           <Items memos={memos} />
           */}
